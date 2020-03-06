@@ -4,7 +4,6 @@ import "bootstrap/dist/css/bootstrap.css";
 
 // 3. JS Event Handling, HTML5 and inline SVG
 document.querySelector("#svgImage").addEventListener("click", event => {
-  event.preventDefault();
   let name = event.target["parentElement"].id;
   let output = name[0].toUpperCase() + name.substring(1);
   alert(output);
@@ -98,8 +97,6 @@ specificJokeBtn.innerText = "Get Joke";
 specificJokeBtn.addEventListener("click", getSpecificJoke);
 secondDiv.append(specificJokeBtn);
 */
-
-
 
 // WEBPACK FOOTER //
 // ./src/index.js
